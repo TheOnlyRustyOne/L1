@@ -1,14 +1,13 @@
 #include<iostream>
 #include<string>
 #include<stdlib.h>
-#include<conio.h>
 
 using namespace std;
-//si ven esto es que puedo escribir
 
 int main(){
-	int opc =0;
-	string cad1,cad2,cad3;
+	int opc =0,pos,inicio,longitud;
+	string cad1,cad2,cad3,conCad;
+	char busCar;
 	do{
 		cout<<"\t---MENU---"<<endl;
 		cout<<"1.inserte una cadena, para calcular su longitud"<<endl;
