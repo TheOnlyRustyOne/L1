@@ -28,7 +28,14 @@ int main(){
 	  		
 	  	case 3: 
 	  		
-	  	case 4: 
+	  	case 4: cout << "Ingrese una cadena: ";
+                cin >> cadena1;
+                cout << "Ingrese la posición inicial: ";
+                cin >> inicio;
+                cout << "Ingrese la longitud de la subcadena: ";
+                cin >> longitud;
+                cout << "La subcadena es: " << generarSubcadena(cadena1, inicio, longitud) << endl;
+                break;
 	  		
 	  	case 5: 		
 	  		
