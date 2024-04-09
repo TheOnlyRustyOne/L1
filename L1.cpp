@@ -53,15 +53,15 @@ int main(){
 				
 	  	case 3: 
 	  	        cout<<"inserte cadena: ";getline(cin,cad1);
-	  		cout<<endl<<"inserte caracter a buscar en la cadena: ";cin>>buscar;
+	  		cout<<endl<<"inserte caracter a buscar en la cadena: ";cin>>busCar;
 	  		    
 	  		    for(int i=0;i<cad1.length();i++){
 	  		    	cad1[i] = tolower(cad1[i]);
 				  }
-	  		    buscar = tolower(buscar);
+	  		    busCar = tolower(busCar);
 	  		    
 	  		    for(int i=0;i<cad1.length();i++){
-	  		    	if(cad1[i] == buscar){
+	  		    	if(cad1[i] == busCar){
 	  		    		cout<<"el caracter SI existe, en la posicion: "<<i+1;
 	  		    		break;
 	  		    	  }
