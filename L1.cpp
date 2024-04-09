@@ -24,9 +24,33 @@ int main(){
 	  	case 1: cout<<"inserte cadena: ";cin>>cad1;
 	  		    cout<<"la longitud de la cadena es: "<<cad1.length(); 
 	  		    system("pause");break;	    
-	  	case 2: 
+	  	case 2: cout<<"inserte la primera cadena: ";cin>>cad1;
+	  	        cout<<"inserte la segunda cadena: ";cin>>cad2;
+	  	        cout<<"inserte la tercera cadena: ";cin>>cad3;
+	  	        conCad = cad1 + cad2 + cad3;
+	  	        cout<<"la concatenacion de las 3 cadenas es: "<<conCad<<endl;
+	  	        cout<<"la logitud es: "<<conCad.length();
+	  	        system("pause");break;
+
 	  		
-	  	case 3: 
+	  	case 3: cout<<"inserte cadena: ";cin>>cad1;
+	  	        cout<<"iserte caracter por buscar: ";cin>>busCar;
+	  	        
+	  	        pos = -1;
+                for (int i = 0; i < cad1.length(); ++i) {
+                   if (cad1[i] == busCar) {
+                      pos = i + 1;
+                      break;
+                  }
+               }
+	  	        
+	  	        if (pos != -1) {
+	  	            cout<<"su caracter fue encontrado en la posicion "<<pos<<" de la cadena";
+	  	        }
+	  	        else {
+	  	            cout<<"su caracter no fue encontrado en la cadena";
+	  	        }
+	  	        system("pause");break;
 	  		
 	  	case 4: cout << "Ingrese una cadena: ";
                 cin >> cadena1;
@@ -37,7 +61,15 @@ int main(){
                 cout << "La subcadena es: " << generarSubcadena(cadena1, inicio, longitud) << endl;
                 break;
 	  		
-	  	case 5: 		
+	  	case 5:  cout << "Ingrese una cadena: ";
+                cin >> cadena1;
+                string aReemplazar, reemplazo;
+                cout << "Ingrese la cadena a reemplazar: ";
+                cin >> aReemplazar;
+                cout << "Ingrese el reemplazo: ";
+                cin >> reemplazo;
+                cout << "La cadena resultante es: " << reemplazarCadena(cadena1, aReemplazar, reemplazo) << endl;
+                break;		
 	  		
 	   	case 6: break;
 	   		
