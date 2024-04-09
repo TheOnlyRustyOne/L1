@@ -55,7 +55,7 @@ int main(){
 	  		    cout<<"inserte cadena: ";getline(cin,cad1);
 	  	        cout<<"inserte caracter por buscar: ";cin>>busCar;
 	  	        
-	  	        pos = -1;
+	  
                 for (int i = 0; i < cad1.length(); ++i) {
                    if (cad1[i] == busCar) {
                       pos = i + 1;
